@@ -3,7 +3,7 @@ def solution(food):
     for i in range(len(food)):
         answer += str(i) * (food[i] // 2)
     answer += '0'
-    answer += answer[::-1]
+    answer += answer[:-1][::-1]
     
     return answer
 
